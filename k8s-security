@@ -1,0 +1,23 @@
+How to secure k8s cluster
+Things to keep in mind while writing governance policy
+When setting up Kubernetes security best practices within the organization, it's important to create a Governance Policy. This policy should clearly outline the best practices the organization commits to following. It will serve as a foundational document guiding the implementation and maintenance of secure Kubernetes environments.
+
+Things to be taken care while writing such policy
+1) Undetand the organisation user and role structure in order to write admission control policy for RBAC 
+2) Undertand The Namespace segmentation like dev, prod,beta in order to implment admiision control policy for Namespaces
+3) Namespace Security 
+   - Separate workloads into namespaces for different teams, environments Dev, staging, prod
+3) Pod Security - Use industry standard Practies to write this policy
+    - Run Pods as Non-Root
+4)  Image Security
+    - Image Scanning
+    - Use Trusted Registries
+5) Secrets Management
+    - Use External Secret Management like HashiCorp Vault, AWS Secrets Manager
+    - use Encryption at Rest in Kubernetes not base64 mechanism
+5) Incident Response Runtime security in k8s
+    - use tool like aqua security Sysdig Secure for runtime security free version
+6) Centralized Logging 
+     use tool like elk 
+7) Use Secure K8s cluster version 
+8) Network Security
