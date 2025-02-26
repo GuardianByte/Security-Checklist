@@ -11,6 +11,8 @@ Things to be taken care while writing such policy
     - Run Pods as Non-Root
 4)  Image Security
     - Image Scanning
+    - Run as Non-Rooted Container
+    - Block Dangerous Capablity
     - Use Trusted Registries
 5) Secrets Management
     - Use External Secret Management like HashiCorp Vault, AWS Secrets Manager
