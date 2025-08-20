@@ -1,0 +1,23 @@
+#Cloud Secuirty Checks#
+Hardcoded Secrets monitoring
+Vulnerable Library mointoring
+Lambda Function Vulnerabilities outdated lambda. Data can be collected through security hub
+Unpatched Container Images (ECR scans)
+Publicly Exposed Resources S3 buckets, RDS databases, EBS snapshots, AMIs.
+Open Security Groups (0.0.0.0/0 access to SSH, RDP, DB ports).
+Unmonitored Internet Gateways or NAT usage.
+Unencrypted Data at Rest EBS, S3, RDS, DynamoDB.
+Unencrypted Data in Transit (no TLS/SSL).
+Sensitive Data Exfiltration Attempts (GuardDuty findings).
+ALB listeners without HTTPS
+ALB not using AWS WAF
+Check DNSSEC enabled (prevents DNS spoofing).
+
+Missing record set protections  (accidental deletion risk).
+Subdomain takeover risks (dangling CNAMEs pointing to decommissioned services).
+CORS monitoring on API gateway
+Wild card permission granted 
+ssl certificate monitoring
+Hardened container image monitoring
+Monitor for unusual data transfers or potential data exfiltration.
+VPC flow log collction on opensearch
